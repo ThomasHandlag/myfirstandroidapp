@@ -4,4 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_text"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="#546E7A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@id/quest_1_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quest_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plain_text_input" />
+
+    <RadioGroup
+        android:id="@+id/rd_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rd_1"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest_1_view">
+
+        <RadioButton
+            android:id="@+id/rd_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amz_text_1" />
+
+        <RadioButton
+            android:id="@+id/rd_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amz_text_2" />
+
+        <RadioButton
+            android:id="@+id/rd_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amz_text_3" />
+    </RadioGroup>
+    <Switch
+        android:id="@+id/sw_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/rg_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rd_group"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <Button
+        android:id="@+id/ac_btn"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/ac_btn"
+        android:background="@color/purple_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sw_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:inputType="textEmailAddress"
+        android:autofillHints="@string/field_mail"
+        android:hint="@string/field_mail"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/ac_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/rs_view"
+        android:textSize="20sp"
+        android:text="@string/rs_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/email_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</android.support.constraint.ConstraintLayout>

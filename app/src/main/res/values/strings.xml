@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">ChatApp</string>
     <string name="btn_1">Button 1</string>
-    <string name="img_1">Image_1</string>
+    <string name="img_1">Image_!</string>
+    <string name="edit_text">Your feedback</string>
+    <string name="quest_1">How was the service?</string>
+    <string name="amz_text_1">Amazing</string>
+    <string name="amz_text_2">Good</string>
+    <string name="amz_text_3">Perfect</string>
+    <string name="amz_val">20%</string>
+    <string name="rg_email">Register with email</string>
+    <string name="ac_btn">Send</string>
+    <string name="field_mail">Email</string>
+    <string name="rs_field">Percent: %s</string>
 </resources>
