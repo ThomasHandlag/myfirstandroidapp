@@ -12,14 +12,4 @@
     <string name="ac_btn">Send</string>
     <string name="field_mail">Email</string>
     <string name="rs_field">Percent: %s</string>
-    <string name="aff_1">I am strong.</string>
-    <string name="aff_2">I believe in myself.</string>
-    <string name="aff_3">Each day is a new opportunity to grow and be a better version of myself.</string>
-    <string name="aff_4">Every challenge in my life is an opportunity to learn from.</string>
-    <string name="aff_5">I have so much to be grateful for.</string>
-    <string name="aff_6">Good things are always coming into my life.</string>
-    <string name="aff_7"> New opportunities await me at every turn.</string>
-    <string name="aff_8">I have the courage to follow my heart.</string>
-    <string name="aff_9">Things will unfold at precisely the right time.</string>
-    <string name="aff_10">I will be present in all the moments that this day brings.</string>
 </resources>
